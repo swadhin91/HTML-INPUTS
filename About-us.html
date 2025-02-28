@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000;
+        }
+
+        .page-container {
+            width: 90%;
+            max-width: 1200px;
+            height: 600px;
+            background-color: #C0D6DF;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-bar {
+            width: 100%;
+            height: 90px;
+            background-color: #d9d9d9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .next-page-button {
+            position: absolute;
+            bottom: 45px;
+            right: 70px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .next-page-button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative; /* Added position relative */
+        }
+
+        .names-list {
+            list-style-type: disc;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .names-list li {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            color: #000000;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 2em;
+            letter-spacing: normal;
+            white-space: nowrap;
+            background-color: transparent;
+            display: inline-block;
+        }
+
+        .presentators-heading {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            color: #000000;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .back-page-button {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .back-page-button img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="header-bar">
+            <div class="icon">
+                <a href="index.html"><img src="Google Forms New Logo.png" alt="Google Forms Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="#">ABOUT US</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="presentators-heading">Presentators</div>
+            <ul class="names-list">
+                <li>Dravish Pardhi</li>
+                <li>Drishti Bawankar</li>
+                <li>Swadhin Upadhyay</li>
+            </ul>
+            <!-- <a href="index.html" class="next-page-button">
+                <img src="Arrow.png" alt="Next Page">
+            </a> -->
+            <a href="index.html" class="back-page-button">
+                <img src="ArrowB.png" alt="Previous Page">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
