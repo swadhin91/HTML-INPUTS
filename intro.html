@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000000;
+        }
+
+        .page-container {
+            width: 90%;
+            max-width: 1200px;
+            height: 600px;
+            background-color: #C0D6DF;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-bar {
+            width: 100%;
+            height: 90px;
+            background-color: #d9d9d9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.8;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-top {
+            flex: 1;
+            display: block; /* Change to block layout */
+            padding: 20px;
+            text-align: left;
+        }
+
+        .content-top p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+            max-width: 90%; /* Fixed max-width */
+            white-space: normal;
+        }
+
+        .content-top h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .content-bottom {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .next-page-button {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .next-page-button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .back-page-button {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .back-page-button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .uls{
+            font-size: 35px;
+            line-height: 150%;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="header-bar">
+            <div class="icon">
+                <a href="inputs.html"><img src="Google Forms New Logo.png" alt="Google Forms Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="inputs.html">HOME</a>
+                <a href="ABOUT-us.html">ABOUT US</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <h1 style="text-align: center; text-decoration: underline ; padding-top: 40px;" >INTRODUCTION</h1>
+                <ul class="uls">
+
+                <li>HTML provides various input types to collect different kinds of user data. </li><li>These input types enhance user experience and improve data validation. </li><li> Input types are used within the &lt;input&gt; tag inside HTML forms.&nbsp;</li>
+            </ul>
+            </div>
+            <div class="content-bottom">
+                <a href="inputs.html" class="back-page-button">
+                    <img src="ArrowB.png" alt="Previous Page">
+                </a>
+                <a href="TBN.html" class="next-page-button">
+                    <img src="Arrow.png" alt="Next Page">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

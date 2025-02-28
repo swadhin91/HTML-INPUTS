@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Based Inputs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.page-container {
+    width: 95%;
+    max-width: 1400px;
+    height: 700px;
+    background-color: #C0D6DF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 45px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-top {
+    flex: 1;
+    display: block;
+    padding: 30px;
+    text-align: left;
+    overflow: auto;
+}
+
+.content-top h1 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1.3em;
+    line-height: 1.8;
+}
+
+.input-table th, .input-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.input-table th {
+    background-color: #f2f2f2;
+}
+
+.content-bottom {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.next-page-button {
+    position: absolute;
+    bottom: 60px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.next-page-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.back-page-button {
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.back-page-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.input-table td:nth-child(3) {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="header-bar">
+            <div class="icon">
+                <a href="inputs.html"><img src="Google Forms New Logo.png" alt="Google Forms Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="inputs.html">HOME</a>
+                <a href="ABOUT-us.html">ABOUT US</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <h1>Text Based Inputs</h1>
+                <table class="input-table">
+    <thead>
+        <tr>
+            <th>Input Type</th>
+            <th>Use</th>
+            <th>Working Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>text</td>
+            <td>Basic text entry for names, etc.</td>
+            <td><input type="text" placeholder="Enter text"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>Secure entry, hides characters.</td>
+            <td><input type="password" placeholder="Enter password"></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>Email address input with validation.</td>
+            <td><input type="email" placeholder="Enter email"></td>
+        </tr>
+        <tr>
+            <td>url</td>
+            <td>Website address input with validation.</td>
+            <td><input type="url" placeholder="Enter URL"></td>
+        </tr>
+        <tr>
+            <td>search</td>
+            <td>Search queries, specialized input.</td>
+            <td><input type="search" placeholder="Search"></td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>Phone number input, mobile-friendly.</td>
+            <td><input type="tel" placeholder="Enter phone"></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div class="content-bottom">
+                <a href="intro.html" class="back-page-button">
+                    <img src="ArrowB.png" alt="Previous Page">
+                </a>
+                <a href="NI.html" class="next-page-button">
+                    <img src="Arrow.png" alt="Next Page">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
